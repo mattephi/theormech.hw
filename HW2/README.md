@@ -125,7 +125,7 @@ $$
 $$ \phi_1(0) = 0 \Rightarrow C = 0$$
 
 $$
-\phi_1(t) = \frac{\sigma_1(t)}{R} \Rightarrow \sigma(t) = R \cdot \phi_1(t)
+\phi_1(t) = \frac{\sigma(t)}{R} \Rightarrow \sigma(t) = R \cdot \phi_1(t)
 $$
 
 Finally we acquire the following functions:
@@ -159,6 +159,7 @@ $$
 ## Main Trick <a id='2.s.3'></a>
 
 Let $OO_2$ be the height of cone $A$. Since we know that $O_2$ is rotating around stationary $Z$ axis and has the law describing the angle $\phi_1(t)$, we can write the law for coordinates of $O_2$ in space depending on time. We have a right with equal legs, which can be easilly verified geometrically. Therefore radius of rotation is equal to $Z$ axis magnitute. As a result, we have the following coordinates:
+
 $$
 \vec{OO_2} = \frac{OO_2}{\sqrt{2}}
 \left[\begin{array}{c} 
@@ -167,7 +168,9 @@ $$
 1
 \end{array}\right]
 $$
+
 Furthermore, now we can find moving axes of the $A$ cone with cross products. Let's denote them as $n_1, n_2, n_3$ with $n_1$ codirectional with $OO_2$. We know that $M_0$ rotates around $O_2$ with the angle law for $\phi_2$. We can express $M_0$ in moving axes and project onto the stationary ones. Therefore the law for $M_0$:
+
 $$
 M_0 = 
 \left[\begin{array}{c}
@@ -176,8 +179,11 @@ O_{2_y} + r \cdot \cos(\phi_2) \cdot n_{2_y} + r \cdot \sin(\phi_2) \cdot n_{3_y
 O_{2_z} + r \cdot \cos(\phi_2) \cdot n_{2_z} + r \cdot \sin(\phi_2) \cdot n_{3_z}
 \end{array}\right]
 $$
+
 Finally, it is no problem to find the law for $M$, since this point lies on the segment $O_2M_0$ with the known relation. 
+
 $$M = \frac{M_0M}{r} \cdot (O_2 - M_0) + M_0$$
+
 Knowing the general law for the point $M$ we can differentiate it over time to find velocity, differentiate once again to find acceleration and use total acceleration and a velocity to derive tangential acceleration and normal acceleration.
 
 ## Visual Simulation <a id='2.si'></a>
