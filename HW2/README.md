@@ -71,11 +71,11 @@ In our particular case we can simplify expression to the following:
 
 $$\frac{\|\vec{V_A} - \vec{V_B}\|}{r_{AB}} = \omega_{AB}$$
 
-We can express evolution ofangular velocity over time for any pair of points with this formula. Calculating according to the formula all the links at $t = 0$ yields the following result:
+We can express evolution of angular velocity over time for any pair of points with this formula. Calculating according to the formula all the links at $t = 0$ yields the following result:
 
 ![](assets/task1/velocities0.png)
 
-This result seems to be correct, since it we are given $\omega_{AO_1} = 2$ and the formula did converge to this value. Moreover, links $AB, AC, BC$ have the same angular velocity, since it is the single solid body. Moreover $CE, CD, ED$ have the same angular velocity since they are different parts of the same link.
+This result seems to be correct, since we are given $\omega_{AO_1} = 2$ and the formula did converge to this value. Moreover, links $AB, AC, BC$ have the same angular velocity, since it is the single solid body. Moreover $CE, CD, ED$ have the same angular velocity since they are different parts of the same link.
 
 ### **Angular Accelerations** <a id='1.s.2.3'></a>
 
@@ -107,6 +107,7 @@ Moreover, let's define $\sigma_1$ as arc length of $A$ on $B$. Let $\sigma_2$ be
 
 ## Mechanics <a id='2.s.2'></a>
 We are given $\omega_1$ and $\epsilon_1$ at the moment $t=0$. Moreover, obviously $\phi(t=0) = 0$. Therefore we are free to integrate and find all the constants since we are given initial conditions. As a result:
+
 $$
 \dot{\omega_1} = \epsilon_1 \Rightarrow \omega_1 = \int{\epsilon_1}dt\\
 \omega_1 = 3.7t + C;\; \omega_1(0) = 2 \Rightarrow C = 2\\
@@ -121,7 +122,9 @@ $$
 \phi_1(t) = 1.85t^2 + 2t\\
 \sigma(t) = (1.85t^2 + 2t) \cdot R
 $$
+
 Therefore, the answer for angular velocity and acceleration of cone $A$ is as follows:
+
 $$
 \phi_2(t) = \frac{\sigma(t)}{r} = (1.85t^2 + 2t) \cdot \frac{R}{r} \approx 6.2 t ^ 2 + 6.7t\\
 \omega_2(t) = \dot{\phi_2} = (3.7t + 2)\frac{R}{r} \approx 12.4t + 6.7\\
