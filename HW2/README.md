@@ -45,9 +45,9 @@ The work is done within the single Jupyter Notebook. All the simulations were pr
 
 ## Geometrical Intuition <a id='1.s.1'></a>
 
-We have to consider that $\phi$ cannot reach certain values as it will require the mechanism to break. Therefore, we have to calculate possible values of $\phi$. We have to notice, that the shortest distance between $O_2A$ cannot exceed $AB + O_2B$, otherwise there is no such $B$ that $AB = 54, O_2B=25$. Shortest distance $O_2A$ can be expressed through a right triangle with legs parallel to the axes. Therefore $({O_2A}_x)^2 + ({O_2A}_y)^2 \leq 79^2$. It is easy to see that it is simply the circle with the center at $O_2$ and a radius of $79$. Therefore extermum values are located at the points of intersection of circle $(O_1, O_1A)$ and $(O_2, AB + O_2B)$.
+We have to consider that $\phi$ cannot reach certain values as it will require the mechanism to break. Therefore, we have to calculate possible values of $\phi$. We have to notice, that the shortest distance between $O_2A$ cannot exceed $AB + O_2B$, otherwise there is no such $B$ that $AB = 54, O_2B=25$. Shortest distance $O_2A$ can be expressed through a right triangle with legs parallel to the axes. Therefore $({O_2A}_x)^2 + ({O_2A}_y)^2 \leq 79^2$. It is easy to see that it is simply the circle with the center at $O_2$ and a radius of $79$. Therefore extremum values are located at the points of intersection of circle $(O_1, O_1A)$ and $(O_2, AB + O_2B)$.
 
-Now we can proceed with the $\phi$ constraints in mind. I propose to build the system starting from the point $A$, since we know the law for $A$ and we can restrict it with controll of the angle $\phi$. Further on $(O, r)$ means the circle with the center at $O$ and radius $r$
+Now we can proceed with the $\phi$ constraints in mind. I propose to build the system starting from the point $A$, since we know the law for $A$ and we can restrict it with control of the angle $\phi$. Further on $(O, r)$ means the circle with the center at $O$ and radius $r$
 
 - We can describe point $B$ as intersection of the circle $(A, AB)$ and the circle $(O_2, O_2B)$. 
 - Next we can describe $C$ as intersection of $(A, AC)$ and $(B, BC)$. 
@@ -59,13 +59,16 @@ Now we can proceed with the $\phi$ constraints in mind. I propose to build the s
 ## Mechanics <a id='1.s.2'></a>
 
 ### **Velocities and Accelerations** <a id='1.s.2.1'></a>
-Since $A$ was initially described parametrically of $\phi(t)$, we know time dependant laws of all points. Therefore velocity and acceleration can be easilly found be simple differentiation and expression through the known quantities.
+Since $A$ was initially described parametrically of $\phi(t)$, we know time dependent laws of all points. Therefore velocity and acceleration can be easilly found be simple differentiation and expression through the known quantities.
 
 ### **Angular Velocities** <a id='1.s.2.2'></a>
 
 Finding angular components is a bit more tricky. We can refer to the following formula:
+
 $$\vec{V}_A = \vec{V}_B + \vec{V}_{AB} = \vec{V}_B + \vec{\omega}_{AB}\times\vec{r}_{AB}$$
+
 In our particular case we can simplify expression to the following:
+
 $$\frac{\|\vec{V}_A - \vec{V}_B\|}{r_{AB}} = \omega_{AB}$$
 
 We can express evolution ofangular velocity over time for any pair of points with this formula. Calculating according to the formula all the links at $t = 0$ yields the following result:
