@@ -117,18 +117,28 @@ $$
 $$
 Finally we acquire the following functions:
 $$
-\epsilon_1(t) = 3.7\\
-\omega_1(t) = 3.7t + 2\\
-\phi_1(t) = 1.85t^2 + 2t\\
+\epsilon_1(t) = 3.7$$
+
+$$
+\omega_1(t) = 3.7t + 2$$
+
+$$
+\phi_1(t) = 1.85t^2 + 2t$$
+
+$$
 \sigma(t) = (1.85t^2 + 2t) \cdot R
 $$
 
 Therefore, the answer for angular velocity and acceleration of cone $A$ is as follows:
 
 $$
-\phi_2(t) = \frac{\sigma(t)}{r} = (1.85t^2 + 2t) \cdot \frac{R}{r} \approx 6.2 t ^ 2 + 6.7t\\
+\phi_2(t) = \frac{\sigma(t)}{r} = (1.85t^2 + 2t) \cdot \frac{R}{r} \approx 6.2 t ^ 2 + 6.7t$$
+
+$$
 \omega_2(t) = \dot{\phi_2} = (3.7t + 2)\frac{R}{r} \approx 12.4t + 6.7\\
-\;\\
+$$
+
+$$
 \epsilon_2(t) = \ddot{\phi_2} = 3.7\;\frac{R}{r} \approx 12.4
 $$ 
 
