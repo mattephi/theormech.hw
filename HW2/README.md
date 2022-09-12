@@ -109,13 +109,24 @@ Moreover, let's define $\sigma_1$ as arc length of $A$ on $B$. Let $\sigma_2$ be
 We are given $\omega_1$ and $\epsilon_1$ at the moment $t=0$. Moreover, obviously $\phi(t=0) = 0$. Therefore we are free to integrate and find all the constants since we are given initial conditions. As a result:
 
 $$
-\dot{\omega_1} = \epsilon_1 \Rightarrow \omega_1 = \int{\epsilon_1}dt\\
-\omega_1 = 3.7t + C;\; \omega_1(0) = 2 \Rightarrow C = 2\\
-\dot{\phi_1} = \omega_1 \Rightarrow \phi_1 = \int{\omega_1}dt\\
-\phi_1(t) = 1.85t^2 + 2t + C;\; \phi_1(0) = 0 \Rightarrow C = 0\\
+\dot{\omega_1} = \epsilon_1 \Rightarrow \omega_1 = \int{\epsilon_1}dt
+$$
+
+$$
+\omega_1 = 3.7t + C;\; \omega_1(0) = 2 \Rightarrow C = 2$$
+
+$$
+\dot{\phi_1} = \omega_1 \Rightarrow \phi_1 = \int{\omega_1}dt$$
+
+$$
+\phi_1(t) = 1.85t^2 + 2t + C;\; \phi_1(0) = 0 \Rightarrow C = 0$$
+
+$$
 \phi_1(t) = \frac{\sigma_1(t)}{R} \Rightarrow \sigma(t) = R \cdot \phi_1(t)
 $$
+
 Finally we acquire the following functions:
+
 $$
 \epsilon_1(t) = 3.7$$
 
