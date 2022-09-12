@@ -119,7 +119,10 @@ $$
 \dot{\phi_1} = \omega_1 \Rightarrow \phi_1 = \int{\omega_1}dt$$
 
 $$
-\phi_1(t) = 1.85t^2 + 2t + C;\; \phi_1(0) = 0 \Rightarrow C = 0$$
+\phi_1(t) = 1.85t^2 + 2t + C
+$$
+
+$$ \phi_1(0) = 0 \Rightarrow C = 0$$
 
 $$
 \phi_1(t) = \frac{\sigma_1(t)}{R} \Rightarrow \sigma(t) = R \cdot \phi_1(t)
