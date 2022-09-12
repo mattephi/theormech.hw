@@ -65,11 +65,11 @@ Since $A$ was initially described parametrically of $\phi(t)$, we know time depe
 
 Finding angular components is a bit more tricky. We can refer to the following formula:
 
-$$\vec{V}_A = \vec{V}_B + \vec{V}_{AB} = \vec{V}_B + \vec{\omega}_{AB}\times\vec{r}_{AB}$$
+$$\vec{V_A} = \vec{V_B} + \vec{V_{AB}} = \vec{V_B} + \vec{\omega_{AB}}\times\vec{r_{AB}}$$
 
 In our particular case we can simplify expression to the following:
 
-$$\frac{\|\vec{V}_A - \vec{V}_B\|}{r_{AB}} = \omega_{AB}$$
+$$\frac{\|\vec{V_A} - \vec{V_B}\|}{r_{AB}} = \omega_{AB}$$
 
 We can express evolution ofangular velocity over time for any pair of points with this formula. Calculating according to the formula all the links at $t = 0$ yields the following result:
 
