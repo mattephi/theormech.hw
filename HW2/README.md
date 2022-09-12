@@ -81,7 +81,7 @@ This result seems to be correct, since we are given $\omega_{AO_1} = 2$ and the 
 
 Differentiating angular velocities acquired in previous step we can find angular acceleration of any link. For link $AB$ it is $\epsilon_{AB}(t=0) = −0.141119125335626$. In other words, the link is slowing down, which can be easilly seen on the animation.
 
-## Visual Simulation <a id='1.vs'></a>
+## Visual Simulation <a id='1.si'></a>
 
 ### **Construction Demo** <a id='1.si.1'></a>
 
@@ -158,7 +158,7 @@ $$
 
 ## Main Trick <a id='2.s.3'></a>
 
-Let $OO_2$ be the height of cone $A$. Since we know that $O_2$ is rotating around stationary $Z$ axis and has the law describing the angle $\phi_1(t)$, we can write the law for coordinates of $O_2$ in space depending on time. We have a right with equal legs, which can be easilly verified geometrically. Therefore radius of rotation is equal to $Z$ axis magnitute. As a result, we have the following coordinates:
+Let $OO_2$ be the height of cone $A$. Since we know that $O_2$ is rotating around stationary $Z$ axis and has the law describing the angle $\phi_1(t)$, we can write the law for coordinates of $O_2$ in space depending on time. We have a right triangle with equal legs, which can be easilly verified geometrically. Therefore radius of rotation is equal to $Z$ axis magnitute. As a result, we have the following coordinates:
 
 $$
 \vec{OO_2} = \frac{OO_2}{\sqrt{2}}
