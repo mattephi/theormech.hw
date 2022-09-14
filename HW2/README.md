@@ -102,11 +102,10 @@ Differentiating angular velocities acquired in previous step we can find angular
 
 ## Mathematical Intuition <a id='2.s.1'></a>
 First of all let's define $R$ as a radius of the stationary cone and $r$ as radius of the rolling cone. Since base angle is $120^{\circ}$ we can derive that cone height is one half of the $OA$. Therefore we can find $R = \sqrt{OA^2 - (\frac{OA}{2})^2}$. To find $r$ we can use sine theorem of triangle. 
-$$\frac{2r}{\sin{30}} = \frac{OA}{\sin{60}} \Rightarrow r = \frac{1}{2} OA \cdot \frac{\sin{30}}{\sin{60}}$$
-Moreover, let's define $\sigma_1$ as arc length of $A$ on $B$. Let $\sigma_2$ be the arc length of the fixed point on $A$ during the roll. Obviously $\sigma_1 = \sigma_2$, since our motion is frictionless and without slipping. Therefore, further on I will omit the subfix and call the trajectory as $\sigma$.
+$$\frac{2r}{\sin{30}} = \frac{OA}{\sin{60}} \Rightarrow r = \frac{1}{2} OA \cdot \frac{\sin{30}}{\sin{75}}$$
 
 ## Mechanics <a id='2.s.2'></a>
-We are given $\omega_1$ and $\epsilon_1$ at the moment $t=0$. Moreover, obviously $\phi(t=0) = 0$. Therefore we are free to integrate and find all the constants since we are given initial conditions. As a result:
+We are given $\omega_1$ and $\epsilon_1$ at the moment $t=0$. Therefore we are free to integrate and find all the constants since we are given initial conditions. As a result:
 
 $$
 \dot{\omega_1} = \epsilon_1 \Rightarrow \omega_1 = \int{\epsilon_1}dt
@@ -115,18 +114,6 @@ $$
 $$
 \omega_1 = 3.7t + C;\; \omega_1(0) = 2 \Rightarrow C = 2$$
 
-$$
-\dot{\phi_1} = \omega_1 \Rightarrow \phi_1 = \int{\omega_1}dt$$
-
-$$
-\phi_1(t) = 1.85t^2 + 2t + C
-$$
-
-$$ \phi_1(0) = 0 \Rightarrow C = 0$$
-
-$$
-\phi_1(t) = \frac{\sigma(t)}{R} \Rightarrow \sigma(t) = R \cdot \phi_1(t)
-$$
 
 Finally we acquire the following functions:
 
@@ -136,32 +123,34 @@ $$
 $$
 \omega_1(t) = 3.7t + 2$$
 
-$$
-\phi_1(t) = 1.85t^2 + 2t$$
+Therefore, the answer for angular velocity and acceleration of cone $A$ are as follows (here I use geometrical notation $\rho{(O, AB)} =$ shortest distance from $O$ to the line $AB$). Finally, let's denote the height of a stationary cone as $OH$ and height of a rolling cone as $OO_1$:
 
 $$
-\sigma(t) = (1.85t^2 + 2t) \cdot R
-$$
-
-Therefore, the answer for angular velocity and acceleration of cone $A$ is as follows:
-
-$$
-\phi_2(t) = \frac{\sigma(t)}{r} = (1.85t^2 + 2t) \cdot \frac{R}{r} \approx 6.2 t ^ 2 + 6.7t$$
-
-$$
-\omega_2(t) = \dot{\phi_2} = (3.7t + 2)\frac{R}{r} \approx 12.4t + 6.7\\
+\vec{V_{O_1}} = \vec{\omega_1} \times \vec{\rho}(O_1, OH)\\
 $$
 
 $$
-\epsilon_2(t) = \ddot{\phi_2} = 3.7\;\frac{R}{r} \approx 12.4
+\vec{V_{O_1}} = \vec{\omega_2} \times \vec{\rho}(O_1, OM_0)\\
+$$
+
+$$
+\Rightarrow \omega_2 = \omega_1 \cdot \frac{\rho(O_1, OH)}{\rho(O_1, OM_0)}
+$$
+
+$$
+\Rightarrow \omega_2 \approx 2.7 \cdot \omega_1 \approx 5.4 \; m/s
+$$
+
+$$
+\epsilon_2(t) = \dot{\omega_2} \approx 2.7 \cdot \dot{\omega_1} \approx 10 \; m/s^2
 $$ 
 
 ## Main Trick <a id='2.s.3'></a>
 
-Let $OO_2$ be the height of cone $A$. Since we know that $O_2$ is rotating around stationary $Z$ axis and has the law describing the angle $\phi_1(t)$, we can write the law for coordinates of $O_2$ in space depending on time. We have a right triangle with equal legs, which can be easilly verified geometrically. Therefore radius of rotation is equal to $Z$ axis magnitute. As a result, we have the following coordinates:
+Since we know that $O_1$ is rotating around stationary $Z$, we can integrate the angular velocity to get the law describing the angle $\phi_1(t)$, we can write the law for coordinates of $O_2$ in space depending on time. We have a right triangle with equal legs, which can be easilly verified geometrically. Therefore radius of rotation is equal to $Z$ axis magnitute. As a result, we have the following coordinates:
 
 $$
-\vec{OO_2} = \frac{OO_2}{\sqrt{2}}
+\vec{OO_1} = \frac{OO_1}{\sqrt{2}}
 \left[\begin{array}{c} 
 \sin{\phi_1}\\
 \cos{\phi_1}\\
@@ -169,20 +158,20 @@ $$
 \end{array}\right]
 $$
 
-Furthermore, now we can find moving axes of the $A$ cone with cross products. Let's denote them as $n_1, n_2, n_3$ with $n_1$ codirectional with $OO_2$. We know that $M_0$ rotates around $O_2$ with the angle law for $\phi_2$. We can express $M_0$ in moving axes and project onto the stationary ones. Therefore the law for $M_0$:
+Furthermore, now we can find moving axes of the $A$ cone with cross products. Let's denote them as $n_1, n_2, n_3$ with $n_1$ codirectional with $OO_1$. Since we know the $\phi(t)$, we can find $\sigma_1(t)$. The main idea is that $\sigma_1(t) = \sigma_2(t)$, as if we let the cone to unfold on the surface of the stationary cone as it rolls, we see that arcs should have identical lengths. Furthermore, knowing the ratio of the projections, we can find $\phi_2(t)$ as the law for angle of rotation of the small cone. We know that $M_0$ rotates with the angle law for $\phi_2$. We can express $M_0$ in moving axes and project onto the stationary ones. Therefore the law for $M_0$:
 
 $$
 M_0 = 
 \left[\begin{array}{c}
-O_{2_x} + r \cdot \cos(\phi_2) \cdot n_{2_x} + r \cdot \sin(\phi_2) \cdot n_{3_x}\\
-O_{2_y} + r \cdot \cos(\phi_2) \cdot n_{2_y} + r \cdot \sin(\phi_2) \cdot n_{3_y}\\
-O_{2_z} + r \cdot \cos(\phi_2) \cdot n_{2_z} + r \cdot \sin(\phi_2) \cdot n_{3_z}
+O_{1_x} + r \cdot \cos(\phi_2) \cdot n_{2_x} + r \cdot \sin(\phi_2) \cdot n_{3_x}\\
+O_{1_y} + r \cdot \cos(\phi_2) \cdot n_{2_y} + r \cdot \sin(\phi_2) \cdot n_{3_y}\\
+O_{1_z} + r \cdot \cos(\phi_2) \cdot n_{2_z} + r \cdot \sin(\phi_2) \cdot n_{3_z}
 \end{array}\right]
 $$
 
 Finally, it is no problem to find the law for $M$, since this point lies on the segment $O_2M_0$ with the known relation. 
 
-$$M = \frac{M_0M}{r} \cdot (O_2 - M_0) + M_0$$
+$$M = \frac{M_0M}{r} \cdot (O_1 - M_0) + M_0$$
 
 Knowing the general law for the point $M$ we can differentiate it over time to find velocity, differentiate once again to find acceleration and use total acceleration and a velocity to derive tangential acceleration and normal acceleration.
 
