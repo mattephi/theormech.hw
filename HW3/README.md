@@ -52,7 +52,7 @@ $$
 $$
 
 $$
-\vec{V}_{M^{tr}} = \vec{V}_{O_s} + \vec{\omega}_1 \times (\vec{M} - \vec{O}_s)
+\vec{V}_{M^{tr}} = {\vec{V}_{O_s}} + \vec{\omega}_1 \times (\vec{M} - \vec{O}_s)
 $$
 
 $$
