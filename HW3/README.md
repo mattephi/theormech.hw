@@ -61,14 +61,10 @@ We can split the task on the two parts.
 
 ### First part (for $t < t_r$)
 
-Point $M$ did not reach point $A$. Then we can easilly calculate relative, transport velocity, relative, corealis and transport accelerations. During my simulation I have taken point $O_s = \frac{O + A}{2}$ as a pole for $M$. It is beneficial since we know that $O_s$ is rotating with the same angle law as the $O$ and $A$ and it is the only motion. Moreover, the distance $O_sM$ is simply the radius $R$. We can easilly derive $\omega_1, \epsilon_1$ from $\phi(t)$ and $\omega_2, \epsilon_2$ from $s_r(t)$, therefore:
+Point $M$ did not reach point $A$. Then we can easilly calculate relative, transport velocity, relative, corealis and transport accelerations. During my simulation I have taken point $O_s = \frac{O + A}{2}$ as a pole for $M$. It is beneficial since we know that $O_s$ is rotating with the same angle law as the $O$ and $A$ and it is the only motion. Moreover, the distance $O_sM$ is simply the radius $R$. We can easilly derive $\omega_1, \epsilon_1$ from $\phi(t)$ and $\omega_2, \epsilon_2$ from $s_r(t)$. Also we have to mention that our body make translatory motion (angle law for both $O_1O and O_2A$ is the same). There there is no rotational speed and therefore there is no coriolis acceleration:
 
 $$
-\vec{V}_{O_s} = \vec{\omega}_1 \times \frac{\vec{O}_1 + \vec{O}_2}{2}
-$$
-
-$$
-\vec{V_M^{tr}} = \vec{V_{O_s}} + \vec{\omega}_1 \times (\vec{M} - \vec{O}_s)
+\vec{V_M^{tr}} = \vec{\omega_1} \times \vec{O_1O}
 $$
 
 $$
@@ -81,11 +77,12 @@ V_M^{rel} =
 $$
 
 $$
-\vec{a_M^{tr}} = \dot{\vec{V_{O_s}}} + \vec{\epsilon_1} \times  (\vec{M} - \vec{O}_s) + \vec{\omega_1} \times (\vec{\omega_1} \times (\vec{M} - \vec{O}_s))
-$$
-
-$$
-\vec{a_M^{cor}} = 2 \cdot \vec{\omega_1}  \times \vec{V_M^{rel}}
+\vec{a_M^{tr}} = 
+\left[\begin{array}{c}
+\ddot{x_{O_s}}\\
+\ddot{y_{O_s}}\\
+0
+\end{array}\right]
 $$
 
 $$
@@ -99,7 +96,7 @@ $$
 
 ### Second part (for $t \ge t_r$)
 
-In the second part point $M$ reaches $A$ and therefore it has no relative components in velocity and acceleration. As a result there is no relative velocity, coreolis and relative acceleration. Moreover, transport velocity and acceleration is absolutely the same as $O_s$. 
+In the second part point $M$ reaches $A$ and therefore it has no relative components in velocity and acceleration. As a result there is no relative velocity, coriolis and relative acceleration. Moreover, transport velocity and acceleration is absolutely the same as $O_s$. 
 
 ## Visual Simulation <a id='1.si'></a>
 
