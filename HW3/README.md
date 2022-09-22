@@ -23,7 +23,7 @@ This is the first homework when I finally started using custom class for simple 
 - [x] [Task 1](#task-1)
    - [Solution](#1.s)
       - [Geometrical Intuition](#1.s.1)
-      - [$M$ reaches $A$](#1.s.2)
+      - [M reaches A](#1.s.2)
       - [Mechanical Intuition](#1.s.3)
    - [Visual Simulation](#1.si)
       - [Components graph](#1.si.1)
