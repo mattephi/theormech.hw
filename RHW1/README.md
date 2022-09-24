@@ -10,8 +10,6 @@
 
 The work is done within the single Jupyter Notebook. All the simulations were printed directly to the gif files. To replicate the result you should execute the [notebook](rhw1.ipynb)
 
-This is the first homework when I finally started using custom class for simple and fast plotting.
-
 - Python Notebooks
 - python3
 - numpy
