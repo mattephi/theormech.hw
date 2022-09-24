@@ -8,7 +8,7 @@
 
 ## Stack:
 
-The work is done within the single Jupyter Notebook. All the simulations were printed directly to the gif files. To replicate the result you should execute the [notebook](TMHW2.ipynb) and check generated files called "task1.gif" and "task2.gif".
+The work is done within the single Jupyter Notebook. All the simulations were printed directly to the gif files. To replicate the result you should execute the [notebook](rhw1.ipynb)
 
 This is the first homework when I finally started using custom class for simple and fast plotting.
 
