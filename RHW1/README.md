@@ -36,7 +36,7 @@ The work is done within the single Jupyter Notebook. All the simulations were pr
 
 ## The main idea <a id='main.idea'></a>
 
-Firstly I will divide the whole path into several segments using simple linspacing. In my particular case I used the split onto $1000$ parts. Then we calculate $y_i$ for each $x_i$ in split. Moreover, we will approximate the arc length as the sum of line segments $\sigma_i = \sum_{j=0}^{i - 1} \|[x_{i + 1}, y_{y + 1}] - [x_{i}, y_{y}]\|$
+Firstly I will divide the whole path into several segments using simple linspacing. In my particular case I used the split onto $1000$ parts. Then we calculate $y_i$ for each $x_i$ in split. Moreover, we will approximate the arc length as the sum of line segments $\sigma_i = \sum \|[x_{i + 1}, y_{y + 1}] - [x_{i}, y_{y}]\|$
 
 I will use some ideas from dynamic programming to dynamically optimize velocities and accelerations in the given constraints in each of the path segments. Given $[x_i, y_i]$ and $[x_{i + 1}, y_{i + 1}]$ - the beginning and the end of the current segment, we will dynamically estimate $v_i, a_i$ - velocity and acceleration of the car on the given segment based on the values from the previous step.
 
