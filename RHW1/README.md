@@ -108,8 +108,8 @@ As we can see, tangential acceleration calculated from actual velocities and $dt
 
 # Conclusion and Results
 
-To get the result we have to simply sum up the time on all segments $\sum_{i=0}^n dt_i$. This implies the following result:
-$$t = 6.1163\;sec$$
+To get the result we have to simply sum up the time on all segments. This implies the following result:
+$$\sum_{i=0}^n dt_i = 6.1163\;sec$$
 
 The simulation itself looks like this:
 
