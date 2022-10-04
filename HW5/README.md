@@ -50,7 +50,9 @@ $P$ - weight of the $ABCD$ body
 $$m \vec{a} = \sum{\vec{F}} = \vec{P_1} + \vec{P_2} + \vec{P_3} + \vec{P} + \vec{N}$$
 
 $$m\ddot{x_c} = 0$$
+
 $$m\dot{x_c} = C_0 = 0 \Rightarrow C_0 = 0$$
+
 $$mx_c = C_1 = 0 \Rightarrow C_1 = 0$$
 
 Therefore, center of mass displacement is zero, then we can apply the analysis of center of mass.
