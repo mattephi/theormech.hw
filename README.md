@@ -7,7 +7,7 @@ Theoretical Mechanics Homework repository
 - [Homework 3](HW3/README.md)
 - [Homework 4](HW4/README.md)
 - [Homework 5](HW5/README.md)
-- [Homework 6](HW5/README.md)
+- [Homework 6](HW6/README.md)
 
 # Big Research Homerworks
 
