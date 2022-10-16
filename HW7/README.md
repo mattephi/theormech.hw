@@ -15,7 +15,6 @@
   - [Force analysis](#force-analysis)
   - [Solution](#solution)
     - [Final system](#final-system)
-- [0\end{array}\right]](#0endarrayright)
     - [Laws of motion](#laws-of-motion)
     - [Laws of motion graph](#laws-of-motion-graph)
     - [System simulation](#system-simulation)
@@ -92,12 +91,11 @@ $$\Rightarrow Q_{\xi} = m_1\ddot{\xi} + m_1\ddot{x}\cos{30} - P_1\sin{60} = 0$$
 
 ### Final system
 
-$$
+<!-- $$
 \Rightarrow 
 \left[\begin{array}{c}
 0\\
-0\end{array}\right] 
-=
+0\end{array}\right] =
 \left[\begin{array}{c c}
 m_1 + 2m_2 + 1.5m_3 & m_1\cos{30}\\
 m_1\cos{30} & m_1
@@ -110,8 +108,11 @@ m_1\cos{30} & m_1
 - (P_1 + P_2 + 2P_3)\sin{30} + R\\
 -P_1\sin{60}
 \end{array}\right]
-$$
+$$ -->
 
+![](assets/fsystem.PNG)
+
+I had to put this system as image, since both github and my ide fail to properly display it.
 ### Laws of motion
 
 From this system we can easilly find the laws of motion. For example, we can find them the following way:
