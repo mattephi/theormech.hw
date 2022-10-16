@@ -94,8 +94,8 @@ $$\Rightarrow Q_{\xi} = m_1\ddot{\xi} + m_1\ddot{x}\cos{30} - P_1\sin{60} = 0$$
 $$\Rightarrow 
 \left[\begin{array}{c}
 0\\
-0\end{array}\right]
-=\left[\begin{array}{c c}
+0\end{array}\right] =
+\left[\begin{array}{c c}
 m_1 + 2m_2 + 1.5m_3 & m_1\cos{30}\\
 m_1\cos{30} & m_1
 \end{array}\right]
@@ -105,7 +105,8 @@ m_1\cos{30} & m_1
 +
 \left[\begin{array}{c}
 - (P_1 + P_2 + 2P_3)\sin{30} + R\\
--P_1\sin{60}\end{array}\right]
+-P_1\sin{60}
+\end{array}\right]
 $$
 
 ### Laws of motion
